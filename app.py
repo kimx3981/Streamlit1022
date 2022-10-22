@@ -4,7 +4,6 @@ import datetime
 import plotly.graph_objects as go
 
 st.write('# 주식 차트')
-#ticker = 'TSLA'
 ticker = st.text_input('티커 입력 >> ')
 data = yf.Ticker(ticker)
 today =datetime.datetime.today().strftime('%Y-%m-%d')
